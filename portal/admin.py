@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+
+class WorkAdmin(admin.ModelAdmin):
+    list_display = ('Title', 'Type')
+
+
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('Title',)
